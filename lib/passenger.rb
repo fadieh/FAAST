@@ -2,21 +2,8 @@ class Passenger
 
 	DEFAULT_BALANCE = 30
 
-	def balance=(balance)
-		@balance = balance
-	end
-
-	def balance
-		@balance
-	end
-
-	def name=(name)
-		@name
-	end
-
-	def name
-		@name
-	end
+	attr_accessor :balance
+	attr_accessor :name
 
 	def initialize(option = {})
 		@balance = option.fetch(:balance, DEFAULT_BALANCE)
