@@ -1,6 +1,6 @@
 class Passenger
 
-	DEFAULT_BALANCE = 30
+	DEFAULT_BALANCE = 0
 
 	attr_accessor :balance
 	attr_accessor :name
