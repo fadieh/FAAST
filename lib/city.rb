@@ -6,7 +6,14 @@ class City
 
 	def initialize(option = {})
 		@capacity = option.fetch(:capacity, DEFAULT_CAPACITY)
+	end
 
+	def passengers
+		@passengers ||= []
+	end
+
+	def touch_out(passenger)
+		passengers << passenger
 	end
 
 end
