@@ -15,4 +15,9 @@ describe City do
 		expect(city.passengers).to include(passenger)
 	end
 
+	it "should release passengers into stations when touch in" do
+		city.release(passenger)
+		expect(city.passengers).to_not include(passenger)
+	end
+
 end

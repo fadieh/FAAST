@@ -16,4 +16,8 @@ class City
 		passengers << passenger
 	end
 
+	def release(passenger)
+		passengers.delete(passenger)
+	end
+
 end
